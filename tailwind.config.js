@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'mob': '430px',
+        'desk': '640px',
       },
       colors: {
         transparent: 'transparent',
