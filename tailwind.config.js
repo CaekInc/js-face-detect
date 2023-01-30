@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
     './index.html',
@@ -22,8 +22,42 @@ module.exports = {
           DEFAULT: '#808080',
           dark: '#999999'
         }
+      },
+      fontSize: {
+        sm: ['12px', {
+          lineHeight: '16px',
+          fontWeight: 400,
+        }],
+        base: ['18px', {
+          lineHeight: '28px',
+          fontWeight: 400
+        }],
+        lg: ['22px', {
+          lineHeight: '33px',
+          fontWeight: 400
+        }],
       }
     },
   },
-  plugins: [],
+  plugins: [
+      plugin(function ({ addBase }) {
+        addBase({
+          'h1': {
+            fontSize: '70px',
+            lineHeight: '75px',
+            fontWeight: '590'
+          },
+          'h2': {
+            fontSize: '44px',
+            lineHeight: '50px',
+            fontWeight: '590'
+          },
+          'h3': {
+            fontSize: '22px',
+            lineHeight: '25px',
+            fontWeight: '590'
+          }
+        })
+      })
+  ],
 };
