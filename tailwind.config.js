@@ -36,7 +36,10 @@ module.exports = {
           lineHeight: '33px',
           fontWeight: 400
         }],
-      }
+      },
+      backgroundImage: {
+        'hero': 'url("src/assets/hero.jpg")'
+      },
     },
   },
   plugins: [
