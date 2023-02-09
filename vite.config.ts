@@ -5,8 +5,12 @@ export default defineConfig({
   plugins: [solidPlugin()],
   server: {
     port: 3000,
+    hmr: {
+      overlay: false
+    }
   },
   build: {
     target: 'esnext',
+
   },
 });

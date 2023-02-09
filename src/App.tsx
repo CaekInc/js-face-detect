@@ -1,6 +1,6 @@
 import type {Component} from 'solid-js';
 import Hero from "./components/Hero";
-import Examples from "./components/Examples";
+import Examples from "./components/Examples.jsx";
 
 const App: Component = () => {
     return (
