@@ -1,15 +1,23 @@
-import type {Component} from 'solid-js';
-import Hero from "./components/Hero";
-import Examples from "./components/Examples.jsx";
-
-const App: Component = () => {
-    return (
-        <div class='pt-14 desk:pt-10 desk:pb-20 pb-14 desk:mx-40 h-full'>
-            <Hero/>
-            <Examples/>
-        </div>
-
-    );
-};
+import React from 'react';
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          123
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
 
 export default App;
