@@ -1,21 +1,12 @@
 import React from 'react';
+import * as Nav from '@radix-ui/react-navigation-menu';
+import {Header} from "./components/Header";
+
 function App() {
+  console.log('react work')
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          123
-          Learn React
-        </a>
-      </header>
+      <Header/>
     </div>
   );
 }
