@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const tsconfig = path.resolve(__dirname, 'tsconfig.json');
+const CopyPlugin = require("copy-webpack-plugin");
+
+// const tsconfig = path.resolve(__dirname, 'tsconfig.json');
 
 console.log('start')
 
@@ -14,6 +16,11 @@ module.exports = {
             template: path.join(__dirname, "src", "index.html"),
 
         }),
+        new CopyPlugin({
+            patterns: [
+                { from: 'src/static/models', to: 'dist/models'},
+            ]
+        })
     ],
     devServer: {
         port: 3030,

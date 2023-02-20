@@ -1,5 +1,4 @@
 import React from 'react';
-import * as Nav from '@radix-ui/react-navigation-menu';
 import {Header} from "./components/Header";
 
 function App() {
